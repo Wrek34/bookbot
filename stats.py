@@ -1,8 +1,10 @@
+#get word count from book
 def get_word_count(book_text_string):
     words_split = book_text_string.split()
     num_words = len(words_split)
     return num_words
 
+#get character count from book
 def get_char_count(book_text_string):
     char_count = {}
     for char in book_text_string:
@@ -13,9 +15,11 @@ def get_char_count(book_text_string):
             char_count[lower_char] = 1
     return char_count
 
+#helper to sort dictionary
 def sort_on(items):
     return items["num"]
 
+#sorts dictionary of charater count by most frequent
 def sort_char_dict(char_count):
     char_dict_list = []
 
